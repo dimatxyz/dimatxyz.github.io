@@ -1,1 +1,206 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dimat</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favi/favicon-16x16.png">
+    <link rel="manifest" href="/favi/site.webmanifest">
+    <link rel="mask-icon" href="/favi/safari-pinned-tab.svg" color="#341f97">
+    <link rel="shortcut icon" href="/favi/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Dimat">
+    <meta name="application-name" content="Dimat">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/favi/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<style>
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(135deg, #341f97 0%, #764ba2 100%);
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    
+    .brand-logo {
+        margin-left: 16px;
+    }
+    
+    @-webkit-keyframes bounce {
+        0%,
+        100% {
+            -webkit-transform: translateY(0);
+        }
+        50% {
+            -webkit-transform: translateY(-5px);
+        }
+    }
+    
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+    
+    .animated {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+    
+    .bounce {
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
+        will-change: transform;
+    }
+    
+    .section {
+        padding: 32px;
+        color: white;
+        height: calc(100% - 64px);
+        width: 100%;
+    }
+    
+    .main-holder {
+        width: 50%;
+    }
+    
+    .hero {
+        margin-top: 64px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+    }
+    
+    .hero svg {
+        height: 100%;
+    }
+    
+    .header {
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    
+    @media only screen and (max-width: 992px) {
+        .hero {
+            position: absolute;
+            right: 0;
+            top: 100px;
+            width: 50%;
+        }
+        .brand-logo {
+            margin-left: 0px;
+        }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .main-holder {
+            width: 100%;
+        }
+        .header {
+            display: block;
+        }
+        .hero {
+            position: absolute;
+            right: 0;
+            top: unset;
+            bottom: 0;
+            height: 50%;
+            width: auto;
+            min-width: 50%;
+        }
+    }
+    
+    .main-holder .title {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    
+    .main-holder .subtitle {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .main-holder .button {
+        margin-top: 32px;
+        background-color: #341f97;
+    }
+    
+    .main-holder .message {
+        font-size: 1.1rem;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <nav class="transparent z-depth-0">
+        <div class="nav-wrapper">
+            <a class="brand-logo thin">Dimat</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Products <span class="new badge purple" data-badge-caption="soon"></span></a></li>
+                <li><a href="#">Marketplace<span class="new badge purple" data-badge-caption="soon"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Products <span class="new badge purple" data-badge-caption="soon"></span></a></li>
+        <li><a href="#">Marketplace<span class="new badge purple" data-badge-caption="soon"></span></a></li>
+    </ul>
+
+
+    <div class="section">
+        <div class="header valign-wrapper">
+            <div class="main-holder">
+                <!-- <div class="title"> Dimat </div> -->
+                <div class="subtitle"> ML App Store & Marketplace</div>
+                <div class="message"> Delivering scalable machine learning services to developers with zero hassle</div>
+                <a class="button waves-effect waves-light btn-large white-text">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 364.07 365.28"><defs><style>.a{fill:none;}.b{isolation:isolate;}.c{opacity:0.1;}.bh,.d,.e{fill:#fff;}.d{opacity:0.4;}.f{fill:url(#a);}.g{fill:url(#b);}.h{fill:url(#c);}.i{fill:url(#d);}.j{fill:url(#e);}.k{fill:#a9ebff;}.l{fill:#1bbae0;mix-blend-mode:multiply;}.an,.ay,.ba,.bh,.l{opacity:0.5;}.m{fill:url(#g);}.n{fill:url(#h);}.o{fill:url(#i);}.p{fill:url(#j);}.q{fill:url(#k);}.r{fill:#004496;}.s{fill:url(#l);}.t{fill:url(#m);}.az,.u{fill:#1a4272;}.v{fill:url(#n);}.w{fill:url(#o);}.x{fill:url(#p);}.y{fill:url(#q);}.z{fill:url(#r);}.aa{clip-path:url(#s);}.ab{fill:url(#t);}.ac{fill:url(#u);}.ad{fill:url(#v);}.ae{fill:url(#w);}.af{fill:url(#x);}.ag{fill:url(#y);}.ah{fill:url(#z);}.ai{fill:url(#aa);}.aj{clip-path:url(#ab);}.ak{fill:url(#ac);}.al{fill:#3a9bd5;}.am{fill:url(#ad);}.an{fill:url(#ae);}.ao{fill:url(#af);}.ap{fill:url(#ag);}.aq{fill:url(#ah);}.ar{fill:url(#ai);}.as{fill:url(#aj);}.at{fill:#2573ba;}.au{fill:url(#ak);}.av{fill:url(#al);}.aw{fill:url(#am);}.ax{fill:url(#an);}.ay{fill:url(#ao);}.az{opacity:0.7;}.ba{fill:url(#ap);}.bb{fill:url(#aq);}.bc{fill:url(#ar);}.bd{fill:url(#as);}.be{fill:url(#at);}.bf{fill:url(#au);}.bg{fill:url(#av);}.bi{fill:#dde1ed;}</style><linearGradient id="a" x1="286.9" y1="73.28" x2="261.1" y2="199.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2573ba"/><stop offset="1" stop-color="#0063ad"/></linearGradient><linearGradient id="b" x1="97.11" y1="264.77" x2="273.35" y2="264.77" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3a9bd5"/><stop offset="0.31" stop-color="#3a9bd5"/><stop offset="0.36" stop-color="#3a9bd5"/><stop offset="0.6" stop-color="#3999d4"/><stop offset="0.69" stop-color="#3592cf"/><stop offset="0.75" stop-color="#2f86c7"/><stop offset="0.8" stop-color="#2676bc"/><stop offset="0.81" stop-color="#2573ba"/></linearGradient><linearGradient id="c" x1="312.14" y1="206.62" x2="176.66" y2="116.55" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#59bdef"/><stop offset="1" stop-color="#7bdaff"/></linearGradient><linearGradient id="d" x1="180.19" y1="125.46" x2="346.45" y2="230.6" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3a9bd5"/><stop offset="1" stop-color="#2573ba"/></linearGradient><linearGradient id="e" x1="245.66" y1="327.77" x2="165.57" y2="177.11" xlink:href="#c"/><linearGradient id="g" x1="129.41" y1="158.49" x2="93.16" y2="177.99" xlink:href="#c"/><linearGradient id="h" x1="17.83" y1="34.5" x2="-23.81" y2="48.49" xlink:href="#c"/><linearGradient id="i" x1="228.95" y1="254.14" x2="155.16" y2="193.95" xlink:href="#c"/><linearGradient id="j" x1="221.61" y1="206.4" x2="151.27" y2="149.02" xlink:href="#c"/><linearGradient id="k" x1="152.71" y1="288.53" x2="306.39" y2="199.31" xlink:href="#a"/><linearGradient id="l" x1="212.08" y1="240.05" x2="260.35" y2="240.05" xlink:href="#c"/><linearGradient id="m" x1="74.72" y1="182.82" x2="201.45" y2="257.57" xlink:href="#d"/><linearGradient id="n" x1="147.66" y1="240.05" x2="195.85" y2="240.05" xlink:href="#c"/><linearGradient id="o" x1="221.61" y1="197.08" x2="151.27" y2="139.7" xlink:href="#c"/><linearGradient id="p" x1="221.61" y1="187.79" x2="151.27" y2="130.41" xlink:href="#c"/><linearGradient id="q" x1="172.69" y1="233.55" x2="289.6" y2="165.67" xlink:href="#a"/><linearGradient id="r" x1="98.14" y1="153.25" x2="194.28" y2="209.95" xlink:href="#d"/><clipPath id="s" transform="translate(-0.64 -1.09)"><polygon class="a" points="148.3 223.41 196.49 251.23 196.49 258.87 193.47 273.4 163.75 282.1 113.38 248.38 123.18 203.83 148.3 223.41"/></clipPath><linearGradient id="t" x1="151.4" y1="249.62" x2="92.61" y2="213.73" xlink:href="#c"/><linearGradient id="u" x1="168.69" y1="268.09" x2="190.38" y2="268.09" xlink:href="#a"/><linearGradient id="v" x1="121.5" y1="260.73" x2="168.69" y2="260.73" xlink:href="#d"/><linearGradient id="w" x1="134.34" y1="248.74" x2="178.09" y2="248.74" xlink:href="#d"/><linearGradient id="x" x1="151.4" y1="242.07" x2="92.61" y2="206.18" xlink:href="#c"/><linearGradient id="y" x1="129.28" y1="245.1" x2="182.71" y2="245.1" xlink:href="#a"/><linearGradient id="z" x1="168.69" y1="260.53" x2="190.38" y2="260.53" xlink:href="#a"/><linearGradient id="aa" x1="121.5" y1="253.17" x2="168.69" y2="253.17" xlink:href="#d"/><clipPath id="ab" transform="translate(-0.64 -1.09)"><polygon class="a" points="261 206.49 322.19 283.51 261.76 302.35 212.72 275.79 212.72 234.36 261 206.49"/></clipPath><linearGradient id="ac" x1="208.41" y1="268.15" x2="277.67" y2="268.15" xlink:href="#a"/><linearGradient id="ad" x1="292.02" y1="283.8" x2="206.65" y2="232.15" xlink:href="#c"/><linearGradient id="ae" x1="198.07" y1="235.26" x2="252.38" y2="235.26" xlink:href="#a"/><linearGradient id="af" x1="228.96" y1="214.67" x2="187.41" y2="182.57" xlink:href="#c"/><linearGradient id="ag" x1="229.13" y1="229.98" x2="252.38" y2="229.98" xlink:href="#a"/><linearGradient id="ah" x1="199.87" y1="228.25" x2="229.13" y2="228.25" xlink:href="#d"/><linearGradient id="ai" x1="205.19" y1="217.48" x2="217.87" y2="217.48" xlink:href="#a"/><linearGradient id="aj" x1="588.47" y1="-671.95" x2="601.82" y2="-671.95" gradientTransform="matrix(0.87, 0.5, 0, 1.15, -254.39, 761.58)" xlink:href="#c"/><linearGradient id="ak" x1="257.45" y1="283.26" x2="264.15" y2="283.26" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#7bdaff"/><stop offset="1" stop-color="#59bdef"/></linearGradient><linearGradient id="al" x1="462.55" y1="-525.97" x2="569.1" y2="-525.97" gradientTransform="matrix(0.87, 0.5, 0, 1.15, -225.13, 611.06)" xlink:href="#d"/><linearGradient id="am" x1="213.24" y1="216.78" x2="225.91" y2="216.78" xlink:href="#a"/><linearGradient id="an" x1="221.29" y1="221.42" x2="233.97" y2="221.42" xlink:href="#a"/><linearGradient id="ao" x1="211.58" y1="226.13" x2="252.38" y2="226.13" xlink:href="#a"/><linearGradient id="ap" x1="245.29" y1="264.5" x2="293.37" y2="264.5" xlink:href="#a"/><linearGradient id="aq" x1="270.67" y1="238.31" x2="229.12" y2="206.21" xlink:href="#c"/><linearGradient id="ar" x1="270.83" y1="253.62" x2="294.08" y2="253.62" xlink:href="#a"/><linearGradient id="as" x1="241.58" y1="251.89" x2="270.83" y2="251.89" xlink:href="#d"/><linearGradient id="at" x1="246.9" y1="235.76" x2="259.57" y2="235.76" xlink:href="#a"/><linearGradient id="au" x1="254.95" y1="240.4" x2="267.62" y2="240.4" xlink:href="#a"/><linearGradient id="av" x1="263" y1="245.05" x2="275.67" y2="245.05" xlink:href="#a"/></defs><title>564 [Converted]</title><g class="b"><path class="c" d="M233.47,365.74L92.29,284.23c-1.61-.93-1.41-2.56.45-3.64L176,232.5a7,7,0,0,1,6.3-.26l141.18,81.51c1.61,0.93,1.41,2.56-.45,3.64l-83.3,48.09A7,7,0,0,1,233.47,365.74Z" transform="translate(-0.64 -1.09)"/><path class="d" d="M341.72,261.27L201,180a5.27,5.27,0,0,1-2.53-5.09l18.67-99.44c0.34-1.81,2-2.46,3.76-1.46l140.74,81.26a5.27,5.27,0,0,1,2.53,5.09l-18.67,99.44C345.14,261.61,343.46,262.27,341.72,261.27Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M343.32,262.23a3.73,3.73,0,0,1-1.85-.54L200.73,180.44a5.73,5.73,0,0,1-2.77-5.61l18.67-99.44a2.76,2.76,0,0,1,1.52-2.1,3.24,3.24,0,0,1,3,.3l140.74,81.26a5.73,5.73,0,0,1,2.77,5.61L346,259.9a2.76,2.76,0,0,1-1.53,2.1A2.66,2.66,0,0,1,343.32,262.23Zm-124-188.18a1.69,1.69,0,0,0-.71.15,1.8,1.8,0,0,0-1,1.37L198.94,175a4.74,4.74,0,0,0,2.29,4.56L342,260.83a2.27,2.27,0,0,0,2.05.25,1.8,1.8,0,0,0,1-1.37l18.67-99.43a4.74,4.74,0,0,0-2.29-4.56L220.63,74.46A2.74,2.74,0,0,0,219.28,74.06Z" transform="translate(-0.64 -1.09)"/><path class="f" d="M347.1,164.1L206.36,82.84a2.66,2.66,0,0,0-2.66-.2l-3,1.75,1.78,0.73-18.52,98.61a5.27,5.27,0,0,0,2.53,5.09L327,270l-0.24,2.12,3-1.75h0a2.28,2.28,0,0,0,1.2-1.71l18.67-99.44A5.27,5.27,0,0,0,347.1,164.1Z" transform="translate(-0.64 -1.09)"/><path class="g" d="M324.51,273.65l-7.1,3.52L182.92,199.52a6.85,6.85,0,0,0-6.16.26l-78.1,45.09-7.4-4,2.65,8.46h0a2.09,2.09,0,0,0,1,1.06L232.9,330a6.85,6.85,0,0,0,6.16-.26l81.43-47a3,3,0,0,0,1.43-1.54h0Z" transform="translate(-0.64 -1.09)"/><path class="h" d="M347.1,164.1L206.36,82.84a2.66,2.66,0,0,0-2.66-.2l-3,1.75,1.78,0.73-18.52,98.61a5.27,5.27,0,0,0,2.53,5.09l70.68,40.81,91.73-63.78A5.2,5.2,0,0,0,347.1,164.1Z" transform="translate(-0.64 -1.09)"/><path class="i" d="M324.1,271.88L183.36,190.62a5.27,5.27,0,0,1-2.53-5.09L199.5,86.1c0.34-1.81,2-2.46,3.76-1.46L344,165.9a5.27,5.27,0,0,1,2.53,5.09l-18.67,99.44C327.52,272.23,325.83,272.88,324.1,271.88Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M323.49,268.23L185.08,188.31a1.86,1.86,0,0,1-.89-1.79L202.54,88.8a0.82,0.82,0,0,1,1.32-.51L342.28,168.2a1.86,1.86,0,0,1,.89,1.79l-18.35,97.72A0.82,0.82,0,0,1,323.49,268.23Z" transform="translate(-0.64 -1.09)"/><path class="j" d="M233.47,323.5L92.29,242c-1.61-.93-1.41-2.56.45-3.64L176,190.26a7,7,0,0,1,6.3-.26l141.18,81.51c1.61,0.93,1.41,2.56-.45,3.64l-83.3,48.09A7,7,0,0,1,233.47,323.5Z" transform="translate(-0.64 -1.09)"/><path class="j" d="M233.47,323.5L92.29,242c-1.61-.93-1.41-2.56.45-3.64L176,190.26a7,7,0,0,1,6.3-.26l141.18,81.51c1.61,0.93,1.41,2.56-.45,3.64l-83.3,48.09A7,7,0,0,1,233.47,323.5Z" transform="translate(-0.64 -1.09)"/><path class="k" d="M92.74,239.83L176,191.74a7,7,0,0,1,6.3-.26L323.53,273a2.31,2.31,0,0,1,.9.86,1.7,1.7,0,0,0-.9-2.34L182.35,190a7,7,0,0,0-6.3.26l-83.3,48.09c-1.38.79-1.84,1.89-1.35,2.78A3.31,3.31,0,0,1,92.74,239.83Z" transform="translate(-0.64 -1.09)"/><path class="l" d="M323.53,271.51L246.09,226.8l-42.32,17.72,0.85,44.64H226.4l37.24,20.29,15.25-8.81,24-13.85h0l20.19-11.66C324.94,274.07,325.14,272.44,323.53,271.51Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M196.91,155.46l-36.14-21c-7.16-4.13-13.91-4.79-19-1.84s-7.91,9.12-7.91,17.38v2.65l0.8,0.51V150c0-8,2.67-13.9,7.51-16.69s11.31-2.14,18.21,1.84l36.14,21A0.4,0.4,0,1,0,196.91,155.46Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M84.22,130.39V49c0-16.3-11.48-36.19-25.6-44.34C51.71,0.63,45.19,0,40.26,2.84s-7.64,8.81-7.64,16.79v5.68l0.8,0.8V19.63c0-7.69,2.57-13.4,7.24-16.1S51.56,1.47,58.22,5.31c13.9,8,25.2,27.61,25.2,43.65v81.43c0,13.51,7.95,29.5,18.73,39.12v-1.07C91.8,158.93,84.22,143.48,84.22,130.39Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M102.23,169.18s-9.2-9.37-12.78-17.09S84,137.21,84,130.83s-0.12-61.19-.12-61.19,0.39-22.73-.56-26.31-3.21-22.73-22-36.48-28.11,1.08-28,8.83,0,12.71,0,12.71,10.27,8.31,14.15,20.19,4.25,9.81,4.31,21.63,0.13,71.73.13,71.73S51,152.46,53.64,160.6,61,177.78,66.56,183.69,80.39,196.58,88,195.9s12.75-3.5,14.22-15.56V169.18Z" transform="translate(-0.64 -1.09)"/><polygon class="e" points="39.62 1.75 8.02 19.97 32.66 27.31 39.62 1.75"/><path class="m" d="M133.86,152.6v3.65c-1.76-1.27-10-6.92-17.87-6.64-8.84.31-11.81,8.41-11.81,8.41s-2.09,6-1.94,8.88c0,0.49.05,1.07,0.07,1.68l-0.15-.13v1.07l0.18,0.16c0.07,2.73.09,5.72,0.09,5.72a49.75,49.75,0,0,1-.69,8.94c-1.37,6.38-6.77,10-7.19,10.56L127,176.22l0.09,0,0.13-.08,0.16-.09,0,0c4.69-2.89,7.27-8.72,7.27-16.47v-6.4Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M108.59,151.77l33.17-19.2a16.52,16.52,0,0,1,12.5-.47c6.84,2.5,42.69,24,42.69,24l-32,18.45s-37.21-23.06-41.58-24.21C114.39,148,108.59,151.77,108.59,151.77Z" transform="translate(-0.64 -1.09)"/><path class="n" d="M32.62,27.8h0a32,32,0,0,0-16.31-8C6.22,18.27,2.06,30.06,2.06,30.06A65.08,65.08,0,0,0,.93,39.81c0,3.63.3,16.79,0.3,16.79l32-18.41h0a0.4,0.4,0,0,0,.22-0.35V28.49C33.15,28.22,32.89,28.06,32.62,27.8Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M88.33,196.34a23.31,23.31,0,0,1-11.46-3.51c-14-8.09-25.42-27.84-25.42-44V67.38c0-16-11.31-35.63-25.2-43.65-6.66-3.84-12.89-4.47-17.56-1.78S1.44,30.36,1.44,38V56.25a0.4,0.4,0,0,1-.8,0V38c0-8,2.71-13.95,7.64-16.79S19.73,19,26.64,23c14.12,8.15,25.6,28,25.6,44.34v81.43c0,15.93,11.22,35.37,25,43.33,6.61,3.81,12.8,4.44,17.43,1.77s7.19-8.35,7.19-16v-9.55c0-8.27,2.81-14.44,7.91-17.38s11.85-2.29,19,1.84l36.13,21a0.4,0.4,0,0,1-.4.69l-36.13-21c-6.9-4-13.37-4.64-18.21-1.84s-7.51,8.72-7.51,16.69v9.55c0,7.93-2.69,13.85-7.58,16.67A13.36,13.36,0,0,1,88.33,196.34Z" transform="translate(-0.64 -1.09)"/><polygon class="o" points="203.99 288.08 139.52 250.86 203.98 164.09 268.45 250.87 203.99 288.08"/><polygon class="p" points="203.99 229.24 139.52 192.02 203.98 154.8 268.45 192.02 203.99 229.24"/><polygon class="k" points="203.99 228.27 140.36 191.54 139.52 192.02 203.99 229.24 268.45 192.02 267.61 191.54 203.99 228.27"/><polygon class="q" points="268.45 250.87 268.45 192.02 203.99 229.24 203.99 288.08 268.45 250.87"/><polygon class="r" points="260.36 246.83 260.36 205.4 212.08 233.28 212.08 274.7 260.36 246.83"/><polygon class="s" points="254.46 208.81 254.46 244.09 212.08 268.56 212.08 274.7 260.36 246.83 260.36 205.4 254.46 208.81"/><polygon class="t" points="139.52 192.02 139.52 250.86 203.99 288.08 203.99 229.24 139.52 192.02"/><polygon class="u" points="147.66 222.32 147.66 229.96 195.85 257.78 195.85 250.15 147.66 222.32"/><polygon class="v" points="151.34 227.78 151.34 224.45 147.66 222.32 147.66 229.96 195.85 257.78 195.85 253.49 151.34 227.78"/><polygon class="e" points="203.99 225.79 144.78 191.61 203.98 157.43 263.19 191.61 203.99 225.79"/><polygon class="e" points="203.99 217.26 144.78 183.08 203.98 148.9 263.19 183.08 203.99 217.26"/><polygon class="e" points="203.99 216.37 145.55 182.64 144.78 183.08 203.99 217.26 263.19 183.08 262.42 182.64 203.99 216.37"/><polygon class="e" points="263.19 191.61 263.19 183.08 203.99 217.26 203.99 225.79 263.19 191.61"/><polygon class="e" points="144.78 183.08 144.78 191.61 203.99 225.79 203.99 217.26 144.78 183.08"/><polygon class="w" points="203.99 219.92 139.52 182.7 203.98 145.48 268.45 182.7 203.99 219.92"/><polygon class="x" points="203.99 210.63 139.52 173.41 203.98 136.19 268.45 173.41 203.99 210.63"/><polygon class="k" points="203.99 209.66 140.36 172.93 139.52 173.41 203.99 210.63 268.45 173.41 267.61 172.93 203.99 209.66"/><polygon class="y" points="268.45 182.7 268.45 173.41 203.99 210.63 203.99 219.92 268.45 182.7"/><polygon class="z" points="139.52 173.41 139.52 182.7 203.99 219.92 203.99 210.63 139.52 173.41"/><g class="aa"><polygon class="ab" points="168.69 272.28 121.5 245.04 143.2 232.51 190.38 259.75 168.69 272.28"/><polygon class="ac" points="190.38 259.75 190.38 263.9 168.69 276.42 168.69 272.28 190.38 259.75"/><polygon class="ad" points="121.5 245.04 121.5 249.18 168.69 276.42 168.69 272.28 121.5 245.04"/><polygon class="e" points="178.09 260.68 134.34 235.43 154.46 223.82 198.2 249.07 178.09 260.68"/><polygon class="e" points="198.2 249.07 198.2 250.45 178.09 262.06 178.09 260.68 198.2 249.07"/><polygon class="ae" points="134.34 235.43 134.34 236.81 178.09 262.06 178.09 260.68 134.34 235.43"/><polygon class="e" points="144.29 230.22 123 240.83 123 244.62 168.69 271.06 188.53 259.61 188.53 255.82 144.29 230.22"/><polygon class="af" points="168.69 264.72 121.5 237.48 143.2 224.96 190.38 252.2 168.69 264.72"/><polygon class="ag" points="168.69 260.76 129.28 238.01 143.19 229.45 182.71 252.66 168.69 260.76"/><polygon class="k" points="143.18 229.98 182.59 252.73 183.51 252.2 143.18 228.92 128.36 237.48 129.28 238.01 143.18 229.98"/><polygon class="ah" points="190.38 252.2 190.38 256.34 168.69 268.87 168.69 264.72 190.38 252.2"/><polygon class="ai" points="121.5 237.48 121.5 241.62 168.69 268.87 168.69 264.72 121.5 237.48"/></g><g class="aj"><path class="ak" d="M263.25,293l-54.84-31.36,5.52-18.34,41,15.8s22.54,16.84,22.77,17.2S265.6,292.1,265.6,292.1Z" transform="translate(-0.64 -1.09)"/><polygon class="al" points="205.37 258.95 237 240.69 236.51 240.41 204.88 258.67 205.37 258.95"/><polygon class="al" points="252.82 249.86 252.33 249.58 220.74 267.82 221.23 268.1 252.82 249.86"/><polygon class="al" points="236.6 276.97 237.09 277.25 268.64 259.04 268.15 258.75 236.6 276.97"/><polygon class="al" points="252.25 286.24 252.72 286.54 284.47 268.21 283.98 267.92 252.25 286.24"/><path class="am" d="M298.49,270.11c0-4.65-2.76-9.88-6.27-11.91l-78.89-45.73a4.57,4.57,0,0,0-4.68-.31c-1.55.9-2.45,2.89-2.45,5.46,0,4.65,2.76,9.88,6.27,11.91l3,1.73-16.77,9.35,54.21,31.28,8.08,5,4.38,4.25,0.66,3.49,0.57,3.59-1.33,5.06,30.82-17.78h0C297.62,274.65,298.49,272.67,298.49,270.11Zm-85.16-42c-3-1.73-5.42-6.41-5.42-10.44,0-2,.58-3.41,1.6-4a3,3,0,0,1,3,.31l16.7,9.68-12,6.68Z" transform="translate(-0.64 -1.09)"/><path class="k" d="M209.51,213.64a2.15,2.15,0,0,1,1.2-.28,2.43,2.43,0,0,0-2,.13c-1,.59-1.6,2-1.6,4,0,4,2.43,8.71,5.42,10.44l3.87,2.24,0.27-.15-3.36-1.95c-3-1.73-5.42-6.41-5.42-10.44C207.91,215.68,208.49,214.23,209.51,213.64Z" transform="translate(-0.64 -1.09)"/><path class="k" d="M292.22,258.21l-78.89-45.73a5.78,5.78,0,0,0-2.35-.79,6.3,6.3,0,0,1,1.56.65l78.89,45.73c3.52,2,6.27,7.26,6.27,11.91,0,2.55-.88,4.53-2.41,5.44h0l-29.85,17.22-0.18.7,30.82-17.78h0c1.53-.91,2.41-2.89,2.41-5.44C298.49,265.47,295.74,260.24,292.22,258.21Z" transform="translate(-0.64 -1.09)"/><polygon class="al" points="210.46 246.69 242.08 228.43 241.59 228.15 209.97 246.41 210.46 246.69"/><polygon class="al" points="257.9 237.6 257.41 237.32 225.82 255.56 226.31 255.84 257.9 237.6"/><polygon class="al" points="241.68 264.71 242.17 264.99 273.73 246.77 273.24 246.49 241.68 264.71"/><polygon class="al" points="257.33 273.98 257.8 274.27 289.55 255.94 289.06 255.66 257.33 273.98"/><polygon class="an" points="252.38 236.99 246.92 233.84 249.18 232.54 230.05 221.46 227.69 222.74 223.12 220.1 199.87 233.53 203.81 235.8 198.07 238.94 218.34 250.31 223.65 247.25 229.13 250.42 252.38 236.99"/><polygon class="ao" points="229.13 227.64 199.87 210.75 223.12 197.32 252.38 214.21 229.13 227.64"/><polygon class="ap" points="252.38 232.33 252.38 214.21 229.13 227.64 229.13 245.75 252.38 232.33"/><polygon class="aq" points="199.87 210.75 199.87 228.87 229.13 245.75 229.13 227.64 199.87 210.75"/><polygon class="e" points="217.86 206.51 205.19 213.82 205.19 228.45 208.95 230.62 208.95 215.99 221.62 208.68 217.86 206.51"/><polygon class="k" points="217.86 206.51 217.86 208.09 220.28 209.46 221.62 208.68 217.86 206.51"/><polygon class="k" points="206.56 227.64 205.19 228.45 208.95 230.62 208.95 228.99 206.56 227.64"/><polygon class="ar" points="217.86 206.51 205.19 213.82 205.19 228.45 206.56 227.64 206.56 214.62 217.87 208.09 217.86 206.51"/><polygon class="k" points="225.91 211.15 225.91 212.73 228.32 214.1 229.66 213.32 225.91 211.15"/><polygon class="k" points="233.96 215.8 233.96 217.38 236.38 218.75 237.72 217.97 233.96 215.8"/><path class="as" d="M266.78,286.59c0,3.69-2.59,5.18-5.78,3.34a12.77,12.77,0,0,1-5.78-10c0-3.69,2.59-5.18,5.78-3.34A12.77,12.77,0,0,1,266.78,286.59Z" transform="translate(-0.64 -1.09)"/><path class="at" d="M264.55,285.3c0,2.26-1.59,3.18-3.55,2a7.84,7.84,0,0,1-3.55-6.14c0-2.26,1.59-3.18,3.55-2A7.84,7.84,0,0,1,264.55,285.3Z" transform="translate(-0.64 -1.09)"/><path class="au" d="M262.25,286.49a7.84,7.84,0,0,1-3.55-6.14,3.16,3.16,0,0,1,.4-1.65c-1,.15-1.65,1-1.65,2.5a7.84,7.84,0,0,0,3.55,6.14c1.37,0.79,2.56.58,3.15-.4A2.94,2.94,0,0,1,262.25,286.49Z" transform="translate(-0.64 -1.09)"/><path class="av" d="M263.35,293.85a5.54,5.54,0,0,1-2.75-.82h0L181.71,247.3c-3.52-2-6.27-7.26-6.27-11.91,0-2.58.89-4.57,2.45-5.46a4.57,4.57,0,0,1,4.68.31L261.45,276c3.52,2,6.27,7.26,6.27,11.91,0,2.58-.89,4.57-2.45,5.46A3.81,3.81,0,0,1,263.35,293.85Zm-1.9-2.29a3,3,0,0,0,3,.31c1-.59,1.6-2,1.6-4,0-4-2.43-8.71-5.42-10.44l-78.89-45.73a3,3,0,0,0-3-.31c-1,.59-1.6,2-1.6,4,0,4,2.43,8.71,5.42,10.44l78.89,45.73h0Z" transform="translate(-0.64 -1.09)"/><polygon class="e" points="225.91 211.15 213.24 218.47 213.24 222.4 217 224.57 217 220.63 229.66 213.32 225.91 211.15"/><polygon class="e" points="233.96 215.8 221.29 223.11 221.29 227.05 225.05 229.22 225.05 225.28 237.72 217.97 233.96 215.8"/><polygon class="k" points="214.6 221.59 213.24 222.4 217 224.57 217 222.94 214.6 221.59"/><polygon class="aw" points="225.91 211.15 213.24 218.47 213.24 222.4 214.6 221.59 214.6 219.26 225.91 212.73 225.91 211.15"/><polygon class="k" points="222.66 226.24 221.29 227.05 225.05 229.22 225.05 227.59 222.66 226.24"/><polygon class="ax" points="233.96 215.8 221.29 223.11 221.29 227.05 222.66 226.24 222.66 223.91 233.97 217.38 233.96 215.8"/><polygon class="ay" points="229.13 245.75 252.38 232.33 252.38 214.21 239.03 206.51 213.24 218.47 211.59 235.63 229.13 245.75"/></g><polygon class="az" points="195.85 250.15 152.35 225.03 150.52 226.09 194.15 251.41 194.15 252.79 195.85 251.81 195.85 250.43 195.85 250.43 195.85 250.15"/><path class="ba" d="M287.66,261l-21.84-12.61-20.53,11.85,21.82,12.6a11.92,11.92,0,0,1,5.4,6.73l0.32,1,20.53-11.94L293,267.6A11.92,11.92,0,0,0,287.66,261Z" transform="translate(-0.64 -1.09)"/><polygon class="bb" points="270.83 251.27 241.58 234.38 264.82 220.96 294.08 237.85 270.83 251.27"/><polygon class="bc" points="294.08 255.97 294.08 237.85 270.83 251.27 270.83 269.39 294.08 255.97"/><polygon class="bd" points="241.58 234.38 241.58 252.5 270.83 269.39 270.83 251.27 241.58 234.38"/><polygon class="e" points="259.57 230.14 246.9 237.46 246.9 241.38 250.66 243.55 250.66 239.63 263.32 232.31 259.57 230.14"/><polygon class="e" points="267.61 234.79 254.95 242.1 254.95 246.02 258.7 248.19 258.7 244.27 271.37 236.96 267.61 234.79"/><polygon class="e" points="275.67 239.44 263 246.75 263 250.67 266.76 252.84 266.76 248.92 279.43 241.61 275.67 239.44"/><polygon class="k" points="259.57 230.14 259.57 231.72 261.98 233.09 263.32 232.31 259.57 230.14"/><polygon class="k" points="248.26 240.57 246.9 241.38 250.66 243.55 250.66 241.91 248.26 240.57"/><polygon class="be" points="259.57 230.14 246.9 237.46 246.9 241.38 248.26 240.57 248.26 238.25 259.57 231.72 259.57 230.14"/><polygon class="k" points="267.61 234.79 267.61 236.37 270.03 237.73 271.37 236.96 267.61 234.79"/><polygon class="k" points="256.31 245.21 254.95 246.02 258.7 248.19 258.7 246.56 256.31 245.21"/><polygon class="bf" points="267.61 234.79 254.95 242.1 254.95 246.02 256.31 245.21 256.31 242.9 267.62 236.37 267.61 234.79"/><polygon class="k" points="275.67 239.44 275.67 241.01 278.08 242.38 279.43 241.61 275.67 239.44"/><polygon class="k" points="264.36 249.86 263 250.67 266.76 252.84 266.76 251.21 264.36 249.86"/><polygon class="bg" points="275.67 239.44 263 246.75 263 250.67 264.36 249.86 264.36 247.54 275.67 241.01 275.67 239.44"/><path class="e" d="M141.11,239.07l3-1.75,3,1.74-3,1.75Z" transform="translate(-0.64 -1.09)"/><path class="e" d="M147.54,242.79l3-1.75,3,1.74-3,1.75Z" transform="translate(-0.64 -1.09)"/><path class="bh" d="M154,246.5l3-1.75,3,1.74-3,1.75Z" transform="translate(-0.64 -1.09)"/><path class="bh" d="M160.4,250.21l3-1.75,3,1.74-3,1.75Z" transform="translate(-0.64 -1.09)"/><path class="bh" d="M166.83,253.93l3-1.75,3,1.74-3,1.75Z" transform="translate(-0.64 -1.09)"/><polygon class="bi" points="59.4 84.18 59.4 81.31 62.75 79.37 62.75 82.24 59.4 84.18"/><polygon class="bi" points="68.86 73.34 68.86 70.47 75.25 66.78 75.25 69.65 68.86 73.34"/><polygon class="bi" points="59.72 72.74 59.72 69.87 75.25 60.9 75.25 63.78 59.72 72.74"/><polygon class="bi" points="65.12 80.88 65.12 78 78.08 70.52 78.08 73.39 65.12 80.88"/><polygon class="bi" points="59.72 78.62 59.72 75.74 66.11 72.06 66.11 74.93 59.72 78.62"/><polygon class="bi" points="63.48 112.15 63.48 115.03 59.55 117.3 59.55 114.42 63.48 112.15"/><polygon class="bi" points="70.64 108.02 70.64 110.89 66.71 113.16 66.71 110.29 70.64 108.02"/><polygon class="bi" points="74.93 100.17 74.93 103.04 59.74 111.81 59.74 108.94 74.93 100.17"/><polygon class="bi" points="67.35 91.07 67.35 88.2 74.93 83.82 74.93 86.69 67.35 91.07"/><polygon class="bi" points="59.55 95.57 59.55 92.7 63.48 90.43 63.48 93.3 59.55 95.57"/><polygon class="bi" points="59.55 100.95 59.55 98.07 67.04 93.75 67.04 96.63 59.55 100.95"/><polygon class="bi" points="70.06 94.88 70.06 92.01 74.93 89.19 74.93 92.07 70.06 94.88"/><polygon class="bi" points="67.35 124.55 67.35 121.67 74.93 117.3 74.93 120.17 67.35 124.55"/><polygon class="bi" points="59.55 129.05 59.55 126.17 63.48 123.9 63.48 126.78 59.55 129.05"/><polygon class="bi" points="59.55 134.42 59.55 131.55 67.04 127.23 67.04 130.1 59.55 134.42"/><polygon class="bi" points="70.06 128.36 70.06 125.48 74.93 122.67 74.93 125.55 70.06 128.36"/><polygon class="bi" points="149.68 155.22 147.19 153.78 150.54 151.84 153.03 153.28 149.68 155.22"/><polygon class="bi" points="154.49 147.06 152 145.63 158.39 141.94 160.88 143.38 154.49 147.06"/><polygon class="bi" points="140.26 149.4 137.78 147.97 153.3 139 155.79 140.44 140.26 149.4"/><polygon class="bi" points="155.4 151.91 152.91 150.48 165.87 143 168.36 144.43 155.4 151.91"/><polygon class="bi" points="145.35 152.34 142.86 150.9 149.25 147.22 151.74 148.65 145.35 152.34"/></g></svg>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+    });
+</script>
+
+</html>
